@@ -31,5 +31,4 @@ def find_cve(info,ip_address):
     with open(f"Results/cve_results_{ip_address}.txt", "w", encoding="utf-8") as f:
         f.write(response.text)
 
-    #print(response.text)
     return response.text

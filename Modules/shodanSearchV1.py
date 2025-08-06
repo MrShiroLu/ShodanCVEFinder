@@ -1,6 +1,5 @@
 import shodan
 
-
 def search_shodan(ip):
 
     with open("API/apiKeyShodan.txt", "r", encoding="utf-8") as f:
@@ -23,10 +22,10 @@ def search_shodan(ip):
 
             if 'vulns' in item:
                 print("Vulnerabilities:")
-
                 for vuln in item['vulns']:
                     print(f"  - {vuln}")
                     proAndServ.append(f" Cve: {vuln}")
+            
             print("="*80)
 
     except shodan.APIError as e:

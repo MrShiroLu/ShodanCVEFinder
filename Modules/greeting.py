@@ -2,7 +2,6 @@ from pyfiglet import figlet_format
 
 def opening():
     print("="*80)    
-    
     netowkrMapper = figlet_format("ShodanCVE ", font="slant")
     
     print(netowkrMapper)
