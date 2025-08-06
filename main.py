@@ -6,7 +6,7 @@ def main():
     opening()
     ip_address = str(input("Enter the IP address to search: ")).strip()
 
-    if not ip_address or ip_address == "" or len(ip_address) > 15 or len(ip_address) < 7:
+    if ip_address == "" or len(ip_address) > 15 or len(ip_address) < 7:
         print("No IP address provided. Exiting.")
         exit(0)
 
@@ -18,7 +18,7 @@ def main():
     cve_results = find_cve(shodan_results,ip_address)
     print("CVE search completed.")
 
-    print("-"*77)
+    print("-"*80)
     print(cve_results)
 
 if __name__ == "__main__":
