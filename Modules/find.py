@@ -24,7 +24,8 @@ def find_cve(info,ip_address):
         Description: [1-2 sentence description]
         Mitigation: [1-2 sentence mitigation]
         Exploitation: [1-2 sentence explanation]
-        Exploit-DB: https://www.exploit-db.com/search?cve=CVE-YYYY-NNNN
+         
+        NIST: https://nvd.nist.gov/vuln/detail/cve-YYYY-NNNN
     - If no CVEs are found, respond exactly with:
         No known CVEs found for this version.""")
     
