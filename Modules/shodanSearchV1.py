@@ -16,9 +16,9 @@ def search_shodan(ip):
         
         for item in host['data']:
             print(f"\nPort: {item['port']}")
-            print(f"Product: {item.get('product', '')}\nVersion: {item.get('version', '')}")
+            print(f"Product: {item.get('product', 'UNKOWN')}\nVersion: {item.get('version', 'UNKOWN')}")
             
-            proAndServ.append(f"{item.get('product', '')} {item.get('version', '')}")
+            proAndServ.append(f"{item.get('product', 'UNKOWN')} {item.get('version', 'UNKOWN')}")
 
             if 'vulns' in item:
                 print("Vulnerabilities:")
