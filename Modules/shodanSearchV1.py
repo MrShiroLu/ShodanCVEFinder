@@ -1,9 +1,15 @@
+import os
 import shodan
+from dotenv import load_dotenv
+
 
 def search_shodan(ip):
 
-    with open("API/apiKeyShodan.txt", "r", encoding="utf-8") as f:
-        key = f.read().strip()
+    load_dotenv()
+    key = os.getenv("API_KEY")
+
+    if not key:
+        raise ValueError("API_KEY not found in environment variables")
 
     api = shodan.Shodan(key)
     

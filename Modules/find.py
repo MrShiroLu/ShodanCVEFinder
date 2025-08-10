@@ -1,10 +1,14 @@
+import os
+from dotenv import load_dotenv
 import google.generativeai as genai
-import time
 
 def find_cve(info,ip_address):
 
-    with open("API/apiKeyGemini.txt", "r", encoding="utf-8") as f:
-        key = f.read().strip()
+    load_dotenv()
+    key = os.getenv("API_GEM")
+
+    if not key:
+        raise ValueError("API_KEY not found in environment variables")
 
     genai.configure(api_key=key)
     model = genai.GenerativeModel("gemini-2.5-flash")

@@ -13,27 +13,19 @@ ShodanCVEFinder is a tool that finds open ports and services for a given IP addr
 - [Shodan](https://pypi.org/project/shodan/) Python package
 - [google-generativeai](https://pypi.org/project/google-generativeai/) Python package
 - [pyfiglet](https://pypi.org/project/pyfiglet/) Python package
+- [python-dotenv](https://pypi.org/project/python-dotenv/) Python package
+
 
 To install dependencies:
 ```bash
-pip install shodan google-generativeai pyfiglet
+pip install shodan google-generativeai pyfiglet python-dotenv
 ```
-
-## API Keys
-You need to create the following files and add your API keys:
-
-- `API/apiKeyShodan.txt` : Should contain your Shodan API key.
-- `API/apiKeyGemini.txt` : Should contain your Google Gemini API key.
-
-Each file should contain only the key, nothing else.
 
 ## Folder Structure
 ```
 ShodanCVEFinder/
-  ├── API/
-  │    ├── apiKeyShodan.txt
-  │    └── apiKeyGemini.txt
   ├── main.py
+  ├── .env
   ├── Modules/
   │    ├── find.py
   │    ├── greeting.py
