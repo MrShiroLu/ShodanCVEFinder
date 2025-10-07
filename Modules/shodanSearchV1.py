@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 def search_shodan(ip):
 
     load_dotenv()
-    key = os.getenv("API_KEY")
+    key = os.getenv("API_SHO")
 
     if not key:
         raise ValueError("API_KEY not found in environment variables")

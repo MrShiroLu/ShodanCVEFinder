@@ -16,7 +16,7 @@ ShodanCVEFinder is a tool that finds open ports and services for a given IP addr
 - [python-dotenv](https://pypi.org/project/python-dotenv/) Python package
 
 
-To install dependencies:
+## To install dependencies:
 ```bash
 pip install shodan google-generativeai pyfiglet python-dotenv
 ```
