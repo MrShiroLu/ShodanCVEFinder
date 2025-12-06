@@ -10,13 +10,13 @@ ShodanCVEFinder is a tool that finds open ports and services for a given IP addr
 
 ## Requirements
 - Python 3.8+
-- [Shodan](https://pypi.org/project/shodan/) Python package
-- [google-generativeai](https://pypi.org/project/google-generativeai/) Python package
-- [pyfiglet](https://pypi.org/project/pyfiglet/) Python package
-- [python-dotenv](https://pypi.org/project/python-dotenv/) Python package
+- [Shodan](https://pypi.org/project/shodan/) 
+- [google-generativeai](https://pypi.org/project/google-generativeai/) 
+- [pyfiglet](https://pypi.org/project/pyfiglet/) 
+- [python-dotenv](https://pypi.org/project/python-dotenv/) 
 
 
-## To install dependencies:
+##Install dependencies:
 ```bash
 pip install shodan google-generativeai pyfiglet python-dotenv
 ```
