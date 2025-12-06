@@ -4,10 +4,8 @@ ShodanCVEFinder is a tool that finds open ports and services for a given IP addr
 
 ## Features
 - Finds open ports and services for an IP address using the Shodan API.
-- Searches for CVEs (Vulnerabilities) for discovered services using the Google Gemini API.
+- Searches for CVEs for discovered services using the Google Gemini API.
 - Displays results on the screen and saves them under the `Results/` folder.
-- User-friendly, step-by-step command-line interface.
-
 ## Requirements
 - Python 3.8+
 - [Shodan](https://pypi.org/project/shodan/) 
@@ -16,7 +14,7 @@ ShodanCVEFinder is a tool that finds open ports and services for a given IP addr
 - [python-dotenv](https://pypi.org/project/python-dotenv/) 
 
 
-##Install dependencies:
+## Install dependencies:
 ```bash
 pip install shodan google-generativeai pyfiglet python-dotenv
 ```
