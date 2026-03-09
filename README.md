@@ -1,6 +1,6 @@
 # ShodanCVEFinder
 
-ShodanCVEFinder is a tool that finds open ports and services for a given IP address using the Shodan API, then queries known CVE (vulnerability) information for these services via the Google Gemini API. Results are saved to a file.
+ShodanCVEFinder is a tool that finds open ports and services for a given IP address using the Shodan API, then queries known CVE (vulnerability) information for these services via the Google Gemini API.
 
 ## Features
 - Finds open ports and services for an IP address using the Shodan API.
